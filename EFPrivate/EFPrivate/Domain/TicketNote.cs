@@ -4,10 +4,7 @@ namespace EFPrivate.Domain
 {
     public class TicketNote
     {
-        private TicketNote()
-        {
-            
-        }
+        private TicketNote() { }
 
         public TicketNote(string content, Ticket ticket)
         {
@@ -16,7 +13,6 @@ namespace EFPrivate.Domain
             Ticket = ticket;
             TicketId = ticket.TicketId;
         }
-
 
         public int TicketNoteId { get; set; }
         public string Content { get; set; }

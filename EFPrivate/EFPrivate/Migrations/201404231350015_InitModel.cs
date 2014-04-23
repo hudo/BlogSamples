@@ -13,6 +13,7 @@ namespace EFPrivate.Migrations
                     {
                         TicketId = c.Int(nullable: false, identity: true),
                         Title = c.String(),
+                        TicketStatus = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.TicketId);
             

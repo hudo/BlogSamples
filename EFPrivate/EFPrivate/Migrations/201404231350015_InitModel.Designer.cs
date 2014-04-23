@@ -13,7 +13,7 @@ namespace EFPrivate.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201404231232543_InitModel"; }
+            get { return "201404231350015_InitModel"; }
         }
         
         string IMigrationMetadata.Source

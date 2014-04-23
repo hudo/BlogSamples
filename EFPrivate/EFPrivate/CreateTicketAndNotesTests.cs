@@ -25,7 +25,7 @@ namespace EFPrivate
             int id = ticket.TicketId;
 
             context = new TicketsContext();
-            context.Database.Log = Console.Write; // lazy loading. Remove "virtual" and test will fail.
+            context.Database.Log = Console.Write; // lazy loading. Remove "virtual" from _notes prop and test will fail.
 
             Ticket newticket = context.Tickets.Find(id);
 
