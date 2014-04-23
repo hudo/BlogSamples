@@ -55,12 +55,21 @@
     <Compile Include="Domain\Ticket.cs" />
     <Compile Include="Domain\TicketNote.cs" />
     <Compile Include="Domain\TicketStatus.cs" />
+    <Compile Include="Migrations\201404231350015_InitModel.cs" />
+    <Compile Include="Migrations\201404231350015_InitModel.Designer.cs">
+      <DependentUpon>201404231350015_InitModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201404231350015_InitModel.resx">
+      <DependentUpon>201404231350015_InitModel.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
